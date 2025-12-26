@@ -1,10 +1,11 @@
 import logo from "../../../images/logo.png";
+import line from "../../../images/line.png";
 
 function Header() {
   return (
     <header className="header">
       <img src={logo} alt="Logo Titulo" className="header__image" />
-      <img src="./images/Line.png" alt="Linea" className="header__image-line" />
+      <img src={line} alt="Linea" className="header__image-line" />
     </header>
   );
 }
