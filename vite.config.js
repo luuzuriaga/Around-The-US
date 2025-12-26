@@ -4,7 +4,8 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/web_project_around_react/',
+  // Cambia esto a './' o a '/' para que Vercel encuentre los archivos
+  base: './', 
   server: {
     port: 3000,
   },
