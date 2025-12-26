@@ -110,11 +110,15 @@ function Main(props) {
       {/* Manejo de todos los popups */}
 
 {popup && (
-  <Popup onClose={onClosePopup} title={popup.title}>
+  <Popup 
+    onClose={onClosePopup} 
+    title={popup.title}
+    // Si el tipo es 'image', ocultamos el botón por defecto
+    showDefaultClose={popup.type !== 'image'} 
+  >
     {popup.type === 'removeCard' ? (
       <RemoveCard 
         onConfirm={() => {
-          // Esto llama a handleConfirmDelete en App.jsx a través de props
           onCardDelete(popup.cardToDelete);
           onClosePopup();
         }}
