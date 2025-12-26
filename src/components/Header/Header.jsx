@@ -1,5 +1,5 @@
 import logo from "../../../images/logo.png";
-import line from "../../../images/line.png";
+import line from "../../../images/Line.png";
 
 function Header() {
   return (
